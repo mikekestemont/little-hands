@@ -10,7 +10,9 @@ The `attmask` folder contains the self-supervised pretraining code in this repos
 - **DINO**: [https://github.com/facebookresearch/dino]
 - **iBOT**: [https://github.com/bytedance/ibot]
 
-The only novel file added is `extract_embeddings.py`, which we used to extract VLAD-encoded document embeddings from a trained ViT checkpoint for downstream processing. It processes images patch-wise, clusters patch descriptors with MiniBatchKMeans, and aggregates them into a fixed-length VLAD vector per document. The folder contains an independent requirements file documenting the server-side environment in which we ran the code. If you use this code, please consider citing the original works below.
+Other files added:
+- `extract_embeddings.py`, which we used to extract VLAD-encoded document embeddings from a trained ViT checkpoint for downstream processing. It processes images patch-wise, clusters patch descriptors with MiniBatchKMeans, and aggregates them into a fixed-length VLAD vector per document. The folder contains an independent requirements file documenting the server-side environment in which we ran the code. If you use this code, please consider citing the original works below.
+- `visualize_augmentations.py`, which isualizes the global and local crops produced by `DataAugmentationMorph` (as used during training in `main_attmask.py`), including the erosion/dilation morphological augmentations and Gaussian blur. Overlays a patch-grid on each crop to illustrate the effective patch tokenization at training resolution. Useful for sanity-checking augmentation strength and patch alignment before/after training.
 
 ### Citations
 
@@ -41,4 +43,13 @@ The only novel file added is `extract_embeddings.py`, which we used to extract V
   year    = {2022}
 }
 ```
+
+## Custom scripts
+
+
+
+
+## Data & model availability
+
+Large files such as pretrained model checkpoints are not included in this repository due to size constraints. These will be made available on Zenodo upon publication, with a corresponding DOI added here.
 
