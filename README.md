@@ -6,11 +6,11 @@ This repository holds the code supporting a scholarly publication, currently und
 > "The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)"
 
 ## Model training
-The `attmask` folder contains the self-supervised pretraining code in this repository, adapted from Tim Raven's implementation, originally developed for the ICDAR2017 Historical Document Writer Identification (Historical-WI) competition. Only minimal modifications were made to run the code on a new dataset outside the original competition setting, without altering the underlying masking or training methodology. Raven's code builds on the official AttMask ([repo](https://github.com/gkakogeorgiou/attmask)) implementation, which introduces the attention-guided masked image modeling strategy. AttMask's codebase is itself built on top of two self-supervised learning frameworks:
+The `attmask` folder contains the self-supervised pretraining code in this repository, adapted from Tim Raven's implementation, originally developed for the ICDAR2017 Historical Document Writer Identification (Historical-WI) competition. Only minimal modifications were made to run the code on a new dataset outside the original competition setting, without altering the underlying masking or training methodology. Raven's code [https://github.com/Traven16/SSL_ViT_WR] builds on the official AttMask ([https://github.com/gkakogeorgiou/attmask]) implementation, which introduces the attention-guided masked image modeling strategy. AttMask's codebase is itself built on top of two self-supervised learning frameworks:
 - **DINO**: [https://github.com/facebookresearch/dino]
 - **iBOT**: [https://github.com/bytedance/ibot]
 
-The only novel file added is `extract_embeddings.py`, which we used to extract VLAD-encoded document embeddings from a trained ViT checkpoint for downstream processing. Processes images patch-wise, clusters patch descriptors with MiniBatchKMeans, and aggregates them into a fixed-length VLAD vector per document. The folder contains an independent requirements file documenting the server-side environment in which we ran the code. If you use this code, please consider citing the original works below.
+The only novel file added is `extract_embeddings.py`, which we used to extract VLAD-encoded document embeddings from a trained ViT checkpoint for downstream processing. It processes images patch-wise, clusters patch descriptors with MiniBatchKMeans, and aggregates them into a fixed-length VLAD vector per document. The folder contains an independent requirements file documenting the server-side environment in which we ran the code. If you use this code, please consider citing the original works below.
 
 ### Citations
 
