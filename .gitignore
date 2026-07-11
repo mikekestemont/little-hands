@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# Large corpus data / model checkpoints / generated outputs (see README:
+# distributed via Zenodo instead of git)
+/data/*
+!/data/exclude.txt
+/outputs/
