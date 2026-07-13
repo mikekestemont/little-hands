@@ -11,8 +11,10 @@ The `attmask` folder contains the self-supervised pretraining code in this repos
 - **iBOT**: [https://github.com/bytedance/ibot]
 
 Other files added:
-- `extract_embeddings.py`, which we used to extract VLAD-encoded document embeddings from a trained ViT checkpoint for downstream processing. It processes images patch-wise, clusters patch descriptors with MiniBatchKMeans, and aggregates them into a fixed-length VLAD vector per document. The folder contains an independent requirements file documenting the server-side environment in which we ran the code. If you use this code, please consider citing the original works below.
+- `extract_embeddings.py`, which we used to extract VLAD-encoded document embeddings from a trained ViT checkpoint for downstream processing. It processes images patch-wise, clusters patch descriptors with MiniBatchKMeans, and aggregates them into a fixed-length VLAD vector per document.
 - `visualize_augmentations.py`, which visualizes the global and local crops produced by `DataAugmentationMorph` (as used during training in `main_attmask.py`), including the erosion/dilation morphological augmentations and Gaussian blur. Overlays a patch-grid on each crop to illustrate the effective patch tokenization at training resolution. Useful for sanity-checking augmentation strength and patch alignment before/after training.
+
+ The folder contains an independent requirements file documenting the server-side environment in which we ran the code. If you use this code, please consider citing the original works below.
 
 ### Citations
 
@@ -63,7 +65,14 @@ The `analysis` folder contains the notebooks used to produce the figures, tables
 - `03-graphetic.ipynb` — compares the paper's HDBSCAN clustering against human annotations and the RAVEN baseline (`data/misc-assets/clusterings.xlsx`), computing agreement statistics (ARI/NMI/Rand index) and temporal ranges per scribal hand. Writes `outputs/cluster_sizes.png`, `outputs/cluster_comp.png`, and the `*-ranges.png` figures.
 - `04-linguistic.ipynb` — stylometric/linguistic analysis of the PAGE-XML transcriptions (`data/deeds-page`, extracted to `data/deeds-txt`): TF-IDF features over the (MUFI-glyph-aware) tokenized text, PCA/UMAP projection, and chi²-based distinctive-feature analysis per scribal group. Writes `outputs/stylo.png`.
 
-These notebooks depend on packages not required by `attmask/` (e.g. `pandas`, `scikit-learn`, `scipy`, `umap-learn`, `hdbscan`, `bokeh`, `plotly`, `seaborn`, `matplotlib`, `Pillow`); see `analysis/requirements.txt` for the pinned versions used to produce the paper's results, and install them in a separate environment from the one used for model training.
+These notebooks depend on packages not required by `attmask/` (e.g. `pandas`, `scikit-learn`, `scipy`, `umap-learn`, `bokeh`, `plotly`, `seaborn`, `matplotlib`, `Pillow`, `openpyxl`); see `analysis/requirements.txt` for the pinned versions, and install them in a separate, dedicated environment from the one used for model training:
+
+```bash
+conda create -n little-hands python=3.10.18
+conda run -n little-hands pip install -r analysis/requirements.txt
+```
+
+Use a dedicated environment for this repository rather than reusing one shared with other projects. `02-clustering.ipynb`'s UMAP/HDBSCAN pipeline is sensitive to the exact numpy/numba/BLAS build in the environment: a later, unrelated package install (in another project sharing the same environment) shifted numpy's build and silently changed the clustering output, even with `random_state` fixed and the input data unchanged. The clustering reported in the paper is preserved as-is in `data/misc-assets/clusterings.xlsx`; a fresh run of `02-clustering.ipynb` is not guaranteed to reproduce it bit-for-bit.
 
 ## Data & model availability
 
