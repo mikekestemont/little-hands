@@ -1,9 +1,27 @@
 # The Little Hands of Antwerp
 ## Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)
 
-This repository holds the code supporting a scholarly publication, currently under double-blinded peer review for the CHR conference:
+This repository holds the code supporting a scholarly publication, accepted as a long oral presentation at [CHR2027](https://2027.computational-humanities-research.org/) (Computational Humanities Research, Manchester) and to appear in the *Anthology of Computers and the Humanities*:
 
-> "The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)"
+> Mike Kestemont, Jan Burgers, Bram Caers, Godfried Croenen, Els De Paermentier, Jeroen Deploige, Gernot A. Fink, Tim Raven, Remco Sleiderink, Caroline Vandyck, Malamatenia Vlachou Efstathiou, Georg Vogeler and Robin Waeytens. "The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)." In *Proceedings of the Conference on Computational Humanities Research 2027 (CHR 2027)*, Manchester.
+
+### Authors
+
+| Author | Affiliation | ORCID |
+| --- | --- | --- |
+| Mike Kestemont | University of Antwerp | [0000-0003-3590-693X](https://orcid.org/0000-0003-3590-693X) |
+| Jan Burgers | Huygens Institute | [0009-0002-5586-4079](https://orcid.org/0009-0002-5586-4079) |
+| Bram Caers | Leiden University | [0000-0001-7482-3198](https://orcid.org/0000-0001-7482-3198) |
+| Godfried Croenen | University of Antwerp & University of Liverpool | [0000-0001-8581-6727](https://orcid.org/0000-0001-8581-6727) |
+| Els De Paermentier | Ghent University | [0000-0002-0070-0897](https://orcid.org/0000-0002-0070-0897) |
+| Jeroen Deploige | Ghent University | [0000-0002-0143-7138](https://orcid.org/0000-0002-0143-7138) |
+| Gernot A. Fink | TU Dortmund University | [0000-0002-7446-7813](https://orcid.org/0000-0002-7446-7813) |
+| Tim Raven | TU Dortmund University | [0009-0002-1528-2744](https://orcid.org/0009-0002-1528-2744) |
+| Remco Sleiderink | University of Antwerp | [0000-0003-0284-324X](https://orcid.org/0000-0003-0284-324X) |
+| Caroline Vandyck | University of Antwerp & Research Foundation – Flanders (FWO) | [0009-0006-9995-1325](https://orcid.org/0009-0006-9995-1325) |
+| Malamatenia Vlachou Efstathiou | IRHT-ENPC, Paris | [0000-0002-9397-356X](https://orcid.org/0000-0002-9397-356X) |
+| Georg Vogeler | University of Graz | [0000-0002-1726-1712](https://orcid.org/0000-0002-1726-1712) |
+| Robin Waeytens | Ghent University | [0009-0002-7576-178X](https://orcid.org/0009-0002-7576-178X) |
 
 ## Model training
 The `attmask` folder contains the self-supervised pretraining code in this repository, adapted from Tim Raven's implementation, originally developed for the ICDAR2017 Historical Document Writer Identification (Historical-WI) competition. Only minimal modifications were made to run the code on a new dataset outside the original competition setting, without altering the underlying masking or training methodology. Raven's code [https://github.com/Traven16/SSL_ViT_WR] builds on the official AttMask ([https://github.com/gkakogeorgiou/attmask]) implementation, which introduces the attention-guided masked image modeling strategy. AttMask's codebase is itself built on top of two self-supervised learning frameworks:
@@ -85,4 +103,12 @@ The `data/` folder holds the corpus underlying the analysis:
 - `misc-assets/` — supporting files: the master clustering spreadsheet (`clusterings.xlsx`), the paleographic-description appendix, and the trained model checkpoint.
 
 Large files (images, embeddings, model checkpoints, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. These will be made available on Zenodo upon publication, with a corresponding DOI added here.
+
+## The annotation event & acknowledgments
+
+The scribal clustering was validated at a two-day community annotation event held at the University of Antwerp (21–22 April 2026), organized by Godfried Croenen, Mike Kestemont, Remco Sleiderink and Caroline Vandyck, with support from Silke Delcart.
+
+We gratefully acknowledge the medievalists who volunteered as annotators: An Faems, Bram Caers, Chris De Wulf, Elisabeth de Bruijn, Els De Paermentier, Febe Thonissen, Frank Willaert, Georg Vogeler, Jan Burgers, Jeroen Deploige, Korneel Dewulf, Lisa Demets, Matenia Vlachou, Noé Leroy, Remco Sleiderink, Robin Moens, Robin Waeytens, Viorica Van der Roest and Ward Leloup.
+
+The preliminary paleographic descriptions in the appendix were contributed by Jan Burgers, Godfried Croenen, Els De Paermentier and Robin Waeytens. We thank Chris De Wulf and Kamiel Temmerman for data donations, Dominique Stutzmann for literature suggestions, and former city archivist Jos Van den Nieuwenhuizen (1928–2026) and archivist Michel Oosterbosch, whose image collection and metadata the corpus builds on. The event was supported by the Special Research Fund (BOF) of the University of Antwerp; Caroline Vandyck and Mike Kestemont were supported by the Research Foundation – Flanders (FWO).
 
