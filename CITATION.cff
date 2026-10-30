@@ -4,6 +4,8 @@ title: "The Little Hands of Antwerp: Unsupervised Writer Identification in a Vis
 type: software
 license: CC-BY-4.0
 repository-code: "https://github.com/mikekestemont/little-hands"
+doi: "10.5281/zenodo.23805278"
+version: "1.0.0"
 authors:
   - family-names: Kestemont
     given-names: Mike

@@ -1,6 +1,8 @@
 # The Little Hands of Antwerp
 ## Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23805278.svg)](https://doi.org/10.5281/zenodo.23805278)
+
 This repository holds the code supporting a scholarly publication, accepted as a long oral presentation at [CHR2027](https://2027.computational-humanities-research.org/) (Computational Humanities Research, Manchester) and to appear in the *Anthology of Computers and the Humanities*:
 
 > Mike Kestemont, Jan Burgers, Bram Caers, Godfried Croenen, Els De Paermentier, Jeroen Deploige, Gernot A. Fink, Tim Raven, Remco Sleiderink, Caroline Vandyck, Malamatenia Vlachou Efstathiou, Georg Vogeler and Robin Waeytens. "The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)." In *Proceedings of the Conference on Computational Humanities Research 2027 (CHR 2027)*, Manchester.
@@ -106,7 +108,7 @@ The Transkribus handwritten text recognition (HTR) model trained for this projec
 
 The paleographic-description appendix is tracked in this repository at [`appendix/Appendix_paleographic_descriptions.pdf`](appendix/Appendix_paleographic_descriptions.pdf).
 
-Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. They are archived together with this code as a single combined deposit on Zenodo; the DOI will be added here upon publication.
+Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. They are archived together with this code as a single combined deposit on Zenodo: [10.5281/zenodo.23805278](https://doi.org/10.5281/zenodo.23805278) (all versions; this version, 1.0.0: [10.5281/zenodo.23805279](https://doi.org/10.5281/zenodo.23805279)).
 
 To cite this work, see [`CITATION.cff`](CITATION.cff); Zenodo deposit metadata is in [`.zenodo.json`](.zenodo.json).
 
