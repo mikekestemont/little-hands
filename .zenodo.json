@@ -1,10 +1,15 @@
 {
   "title": "The Little Hands of Antwerp: Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350) — code, data and model",
-  "description": "Code, corpus data and trained model supporting the paper \"The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)\" (CHR 2027, Manchester). Includes the self-supervised (AttMask/ViT) pretraining code, the analysis notebooks reproducing the paper's figures and tables, the deed and Flanders page images, PAGE-XML transcriptions and extracted plain text, VLAD document embeddings, the trained ViT checkpoint, the master clustering and human annotations, and the interactive UMAP/HDBSCAN visualisation. The Transkribus HTR model trained for this project, Hand of Antwerp v10 (Transkribus model ID 545597), is not part of this deposit and is not yet publicly available in Transkribus. See the README in the accompanying GitHub repository for structure and reproduction instructions. Licensed under CC BY 4.0, with two exceptions: (1) the deed images (images-deeds.zip and images-flanders.zip) are faithful reproductions of public-domain medieval documents (ca. 1300-1350); under Article 14 of Directive (EU) 2019/790 they are not subject to copyright, so CC BY 4.0 does not apply to them and they are marked with the Public Domain Mark 1.0; (2) the pretraining code in attmask/ (inside the code archive) is a modified version of Apache-2.0 code and remains under the Apache License 2.0.",
+  "description": "Code, corpus data and trained model supporting the paper \"The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)\" (CHR 2027, Manchester). Includes the self-supervised (AttMask/ViT) pretraining code, the analysis notebooks reproducing the paper's figures and tables, the deed and Flanders page images, PAGE-XML transcriptions and extracted plain text, VLAD document embeddings, the trained ViT checkpoint, the master clustering and human annotations, and the interactive UMAP/HDBSCAN visualisation. The Transkribus HTR model trained for this project, Hand of Antwerp v10 (Transkribus model ID 545597), is not part of this deposit; it will be made publicly available in Transkribus. This work was funded by the Research Foundation – Flanders (FWO), project number 1133925N; the annotation event was supported by the Special Research Fund (BOF) of the University of Antwerp. See the README in the accompanying GitHub repository for structure and reproduction instructions. Licensed under CC BY 4.0, with two exceptions: (1) the deed images (images-deeds.zip and images-flanders.zip) are faithful reproductions of public-domain medieval documents (ca. 1300-1350); under Article 14 of Directive (EU) 2019/790 they are not subject to copyright, so CC BY 4.0 does not apply to them and they are marked with the Public Domain Mark 1.0; (2) the pretraining code in attmask/ (inside the code archive) is a modified version of Apache-2.0 code and remains under the Apache License 2.0.",
   "upload_type": "dataset",
   "access_right": "open",
   "license": "cc-by-4.0",
   "language": "dum",
+  "version": "1.0.0",
+  "conference_title": "Computational Humanities Research 2027",
+  "conference_acronym": "CHR 2027",
+  "conference_place": "Manchester, United Kingdom",
+  "conference_url": "https://2027.computational-humanities-research.org/",
   "keywords": [
     "writer identification",
     "paleography",
@@ -30,6 +35,27 @@
     { "name": "Vogeler, Georg", "affiliation": "University of Graz", "orcid": "0000-0002-1726-1712" },
     { "name": "Waeytens, Robin", "affiliation": "Ghent University", "orcid": "0009-0002-7576-178X" }
   ],
+  "contributors": [
+    { "name": "Faems, An", "type": "Other" },
+    { "name": "De Wulf, Chris", "type": "Other" },
+    { "name": "de Bruijn, Elisabeth", "type": "Other" },
+    { "name": "Thonissen, Febe", "type": "Other" },
+    { "name": "Willaert, Frank", "type": "Other" },
+    { "name": "Dewulf, Korneel", "type": "Other" },
+    { "name": "Demets, Lisa", "type": "Other" },
+    { "name": "Leroy, Noé", "type": "Other" },
+    { "name": "Moens, Robin", "type": "Other" },
+    { "name": "Van der Roest, Viorica", "type": "Other" },
+    { "name": "Leloup, Ward", "type": "Other" },
+    { "name": "Delcart, Silke", "type": "ProjectMember" },
+    { "name": "Temmerman, Kamiel", "type": "DataCollector" },
+    { "name": "Van den Nieuwenhuizen, Jos", "type": "DataCollector" },
+    { "name": "Oosterbosch, Michel", "type": "DataCollector" }
+  ],
+  "custom": {
+    "code:codeRepository": "https://github.com/mikekestemont/little-hands",
+    "code:programmingLanguage": [{ "id": "python" }]
+  },
   "related_identifiers": [
     {
       "relation": "isSupplementTo",
