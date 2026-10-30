@@ -102,6 +102,8 @@ The `data/` folder holds the corpus underlying the analysis:
 - `exclude.txt` — IDs of documents excluded from clustering (e.g. damaged/illegible deeds).
 - `misc-assets/` — supporting files: the master clustering spreadsheet (`clusterings.xlsx`), human annotations (`labels.csv`), and the trained model checkpoint.
 
+The Transkribus handwritten text recognition (HTR) model trained for this project is **Hand of Antwerp v10** (Transkribus model ID 545597; Middle Dutch; 2.62% character error rate on its validation set). It is not yet publicly available in Transkribus; until it is, please contact the authors.
+
 The paleographic-description appendix is tracked in this repository at [`appendix/Appendix_paleographic_descriptions.pdf`](appendix/Appendix_paleographic_descriptions.pdf).
 
 Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. They are archived together with this code as a single combined deposit on Zenodo; the DOI will be added here upon publication.
