@@ -108,6 +108,10 @@ Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.h
 
 To cite this work, see [`CITATION.cff`](CITATION.cff); Zenodo deposit metadata is in [`.zenodo.json`](.zenodo.json).
 
+## License
+
+This repository and the accompanying Zenodo deposit (code, data, model and appendix) are licensed under [CC BY 4.0](LICENSE), with one exception: the pretraining code in `attmask/` is a modified version of Apache-2.0 code (AttMask, DINO, iBOT) and remains under the [Apache License 2.0](attmask/LICENSE); see [`attmask/NOTICE`](attmask/NOTICE).
+
 ## The annotation event & acknowledgments
 
 The scribal clustering was validated at a two-day community annotation event held at the University of Antwerp (21–22 April 2026), organized by Godfried Croenen, Mike Kestemont, Remco Sleiderink and Caroline Vandyck, with support from Silke Delcart.

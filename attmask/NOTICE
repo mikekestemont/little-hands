@@ -1,0 +1,23 @@
+The code in this folder is licensed under the Apache License, Version 2.0
+(see LICENSE in this folder), not under the CC BY 4.0 license that covers
+the rest of this repository.
+
+It is a modified version of the following works:
+
+- Tim Raven, SSL_ViT_WR (https://github.com/Traven16/SSL_ViT_WR),
+  developed for the ICDAR2017 Historical Document Writer Identification
+  competition.
+- AttMask (https://github.com/gkakogeorgiou/attmask),
+  Copyright the AttMask authors, Apache License 2.0.
+- DINO (https://github.com/facebookresearch/dino),
+  Copyright (c) Facebook, Inc. and its affiliates, Apache License 2.0.
+- iBOT (https://github.com/bytedance/ibot),
+  Copyright (c) ByteDance, Inc. and its affiliates, Apache License 2.0.
+
+Where a file header refers to "the LICENSE file in the root directory of
+this source tree", it means the LICENSE file in this attmask/ folder.
+
+Modifications for "The Little Hands of Antwerp" (2026): minimal changes to
+run the code on a new dataset outside the original competition setting,
+without altering the masking or training methodology; added
+extract_embeddings.py and visualize_augmentations.py.

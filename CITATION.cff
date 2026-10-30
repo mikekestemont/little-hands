@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or data, please cite both the software (this repository) and the accompanying paper (see preferred-citation)."
 title: "The Little Hands of Antwerp: Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)"
 type: software
-license: MIT
+license: CC-BY-4.0
 repository-code: "https://github.com/mikekestemont/little-hands"
 authors:
   - family-names: Kestemont
