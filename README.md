@@ -110,7 +110,10 @@ To cite this work, see [`CITATION.cff`](CITATION.cff); Zenodo deposit metadata i
 
 ## License
 
-This repository and the accompanying Zenodo deposit (code, data, model and appendix) are licensed under [CC BY 4.0](LICENSE), with one exception: the pretraining code in `attmask/` is a modified version of Apache-2.0 code (AttMask, DINO, iBOT) and remains under the [Apache License 2.0](attmask/LICENSE); see [`attmask/NOTICE`](attmask/NOTICE).
+This repository and the accompanying Zenodo deposit (code, data, model and appendix) are licensed under [CC BY 4.0](LICENSE), with two exceptions:
+
+- **Images.** The deed images (`data/deeds-img/` and `data/flanders-img/`; `images-deeds.zip` and `images-flanders.zip` in the Zenodo deposit) are faithful reproductions of medieval documents (ca. 1300–1350) that are in the public domain. Under Article 14 of Directive (EU) 2019/790, such reproductions are not subject to copyright. CC BY 4.0 therefore does not apply to them; they are marked with the [Public Domain Mark 1.0](https://creativecommons.org/publicdomain/mark/1.0/).
+- **Pretraining code.** The code in `attmask/` is a modified version of Apache-2.0 code (AttMask, DINO, iBOT) and remains under the [Apache License 2.0](attmask/LICENSE); see [`attmask/NOTICE`](attmask/NOTICE).
 
 ## The annotation event & acknowledgments
 
