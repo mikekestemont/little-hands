@@ -1,0 +1,40 @@
+{
+  "title": "The Little Hands of Antwerp: Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350) — code, data and model",
+  "description": "Code, corpus data and trained model supporting the paper \"The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)\" (CHR 2027, Manchester). Includes the self-supervised (AttMask/ViT) pretraining code, the analysis notebooks reproducing the paper's figures and tables, the deed and Flanders page images, PAGE-XML transcriptions and extracted plain text, VLAD document embeddings, the trained ViT checkpoint, the master clustering and human annotations, and the interactive UMAP/HDBSCAN visualisation. See the README in the accompanying GitHub repository for structure and reproduction instructions.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "MIT",
+  "language": "dut",
+  "keywords": [
+    "writer identification",
+    "paleography",
+    "self-supervised learning",
+    "vision transformers",
+    "historical documents",
+    "medieval charters",
+    "Middle Dutch",
+    "computational humanities"
+  ],
+  "creators": [
+    { "name": "Kestemont, Mike", "affiliation": "University of Antwerp", "orcid": "0000-0003-3590-693X" },
+    { "name": "Burgers, Jan", "affiliation": "Huygens Institute", "orcid": "0009-0002-5586-4079" },
+    { "name": "Caers, Bram", "affiliation": "Leiden University", "orcid": "0000-0001-7482-3198" },
+    { "name": "Croenen, Godfried", "affiliation": "University of Antwerp & University of Liverpool", "orcid": "0000-0001-8581-6727" },
+    { "name": "De Paermentier, Els", "affiliation": "Ghent University", "orcid": "0000-0002-0070-0897" },
+    { "name": "Deploige, Jeroen", "affiliation": "Ghent University", "orcid": "0000-0002-0143-7138" },
+    { "name": "Fink, Gernot A.", "affiliation": "TU Dortmund University", "orcid": "0000-0002-7446-7813" },
+    { "name": "Raven, Tim", "affiliation": "TU Dortmund University", "orcid": "0009-0002-1528-2744" },
+    { "name": "Sleiderink, Remco", "affiliation": "University of Antwerp", "orcid": "0000-0003-0284-324X" },
+    { "name": "Vandyck, Caroline", "affiliation": "University of Antwerp & Research Foundation – Flanders (FWO)", "orcid": "0009-0006-9995-1325" },
+    { "name": "Vlachou Efstathiou, Malamatenia", "affiliation": "IRHT-ENPC, Paris", "orcid": "0000-0002-9397-356X" },
+    { "name": "Vogeler, Georg", "affiliation": "University of Graz", "orcid": "0000-0002-1726-1712" },
+    { "name": "Waeytens, Robin", "affiliation": "Ghent University", "orcid": "0009-0002-7576-178X" }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/mikekestemont/little-hands",
+      "scheme": "url"
+    }
+  ]
+}

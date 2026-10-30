@@ -1,0 +1,129 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite both the software (this repository) and the accompanying paper (see preferred-citation)."
+title: "The Little Hands of Antwerp: Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)"
+type: software
+license: MIT
+repository-code: "https://github.com/mikekestemont/little-hands"
+authors:
+  - family-names: Kestemont
+    given-names: Mike
+    affiliation: "University of Antwerp"
+    orcid: "https://orcid.org/0000-0003-3590-693X"
+  - family-names: Burgers
+    given-names: Jan
+    affiliation: "Huygens Institute"
+    orcid: "https://orcid.org/0009-0002-5586-4079"
+  - family-names: Caers
+    given-names: Bram
+    affiliation: "Leiden University"
+    orcid: "https://orcid.org/0000-0001-7482-3198"
+  - family-names: Croenen
+    given-names: Godfried
+    affiliation: "University of Antwerp & University of Liverpool"
+    orcid: "https://orcid.org/0000-0001-8581-6727"
+  - family-names: "De Paermentier"
+    given-names: Els
+    affiliation: "Ghent University"
+    orcid: "https://orcid.org/0000-0002-0070-0897"
+  - family-names: Deploige
+    given-names: Jeroen
+    affiliation: "Ghent University"
+    orcid: "https://orcid.org/0000-0002-0143-7138"
+  - family-names: Fink
+    given-names: "Gernot A."
+    affiliation: "TU Dortmund University"
+    orcid: "https://orcid.org/0000-0002-7446-7813"
+  - family-names: Raven
+    given-names: Tim
+    affiliation: "TU Dortmund University"
+    orcid: "https://orcid.org/0009-0002-1528-2744"
+  - family-names: Sleiderink
+    given-names: Remco
+    affiliation: "University of Antwerp"
+    orcid: "https://orcid.org/0000-0003-0284-324X"
+  - family-names: Vandyck
+    given-names: Caroline
+    affiliation: "University of Antwerp & Research Foundation – Flanders (FWO)"
+    orcid: "https://orcid.org/0009-0006-9995-1325"
+  - family-names: "Vlachou Efstathiou"
+    given-names: Malamatenia
+    affiliation: "IRHT-ENPC, Paris"
+    orcid: "https://orcid.org/0000-0002-9397-356X"
+  - family-names: Vogeler
+    given-names: Georg
+    affiliation: "University of Graz"
+    orcid: "https://orcid.org/0000-0002-1726-1712"
+  - family-names: Waeytens
+    given-names: Robin
+    affiliation: "Ghent University"
+    orcid: "https://orcid.org/0009-0002-7576-178X"
+keywords:
+  - writer identification
+  - paleography
+  - self-supervised learning
+  - vision transformers
+  - historical documents
+  - medieval charters
+  - computational humanities
+preferred-citation:
+  type: conference-paper
+  title: "The Little Hands of Antwerp. Unsupervised Writer Identification in a Visual Corpus of Vernacular Aldermen Deeds (ca. 1300-1350)"
+  year: 2027
+  collection-title: "Proceedings of the Conference on Computational Humanities Research 2027 (CHR 2027)"
+  conference:
+    name: "Computational Humanities Research 2027 (CHR 2027)"
+    city: Manchester
+    country: GB
+  authors:
+    - family-names: Kestemont
+      given-names: Mike
+      affiliation: "University of Antwerp"
+      orcid: "https://orcid.org/0000-0003-3590-693X"
+    - family-names: Burgers
+      given-names: Jan
+      affiliation: "Huygens Institute"
+      orcid: "https://orcid.org/0009-0002-5586-4079"
+    - family-names: Caers
+      given-names: Bram
+      affiliation: "Leiden University"
+      orcid: "https://orcid.org/0000-0001-7482-3198"
+    - family-names: Croenen
+      given-names: Godfried
+      affiliation: "University of Antwerp & University of Liverpool"
+      orcid: "https://orcid.org/0000-0001-8581-6727"
+    - family-names: "De Paermentier"
+      given-names: Els
+      affiliation: "Ghent University"
+      orcid: "https://orcid.org/0000-0002-0070-0897"
+    - family-names: Deploige
+      given-names: Jeroen
+      affiliation: "Ghent University"
+      orcid: "https://orcid.org/0000-0002-0143-7138"
+    - family-names: Fink
+      given-names: "Gernot A."
+      affiliation: "TU Dortmund University"
+      orcid: "https://orcid.org/0000-0002-7446-7813"
+    - family-names: Raven
+      given-names: Tim
+      affiliation: "TU Dortmund University"
+      orcid: "https://orcid.org/0009-0002-1528-2744"
+    - family-names: Sleiderink
+      given-names: Remco
+      affiliation: "University of Antwerp"
+      orcid: "https://orcid.org/0000-0003-0284-324X"
+    - family-names: Vandyck
+      given-names: Caroline
+      affiliation: "University of Antwerp & Research Foundation – Flanders (FWO)"
+      orcid: "https://orcid.org/0009-0006-9995-1325"
+    - family-names: "Vlachou Efstathiou"
+      given-names: Malamatenia
+      affiliation: "IRHT-ENPC, Paris"
+      orcid: "https://orcid.org/0000-0002-9397-356X"
+    - family-names: Vogeler
+      given-names: Georg
+      affiliation: "University of Graz"
+      orcid: "https://orcid.org/0000-0002-1726-1712"
+    - family-names: Waeytens
+      given-names: Robin
+      affiliation: "Ghent University"
+      orcid: "https://orcid.org/0009-0002-7576-178X"

@@ -1,6 +1,9 @@
 # Internal, non-public notes (reviewer comments, revision planning)
 REVISIONS_CHR2027.md
 
+# Local working scratch (figure-generation scripts for talks, previews, etc.)
+scratchpad/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

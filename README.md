@@ -100,9 +100,13 @@ The `data/` folder holds the corpus underlying the analysis:
 - `deeds-page/`, `deeds-txt/` — PAGE-XML transcriptions and their extracted plain-text versions.
 - `embeddings/` — VLAD document embeddings extracted from the trained ViT checkpoint.
 - `exclude.txt` — IDs of documents excluded from clustering (e.g. damaged/illegible deeds).
-- `misc-assets/` — supporting files: the master clustering spreadsheet (`clusterings.xlsx`), the paleographic-description appendix, and the trained model checkpoint.
+- `misc-assets/` — supporting files: the master clustering spreadsheet (`clusterings.xlsx`), human annotations (`labels.csv`), and the trained model checkpoint.
 
-Large files (images, embeddings, model checkpoints, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. These will be made available on Zenodo upon publication, with a corresponding DOI added here.
+The paleographic-description appendix is tracked in this repository at [`appendix/Appendix_paleographic_descriptions.pdf`](appendix/Appendix_paleographic_descriptions.pdf).
+
+Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. They are archived together with this code as a single combined deposit on Zenodo; the DOI will be added here upon publication.
+
+To cite this work, see [`CITATION.cff`](CITATION.cff); Zenodo deposit metadata is in [`.zenodo.json`](.zenodo.json).
 
 ## The annotation event & acknowledgments
 
