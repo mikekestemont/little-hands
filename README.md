@@ -108,7 +108,7 @@ The Transkribus handwritten text recognition (HTR) model trained for this projec
 
 The paleographic-description appendix is tracked in this repository at [`appendix/Appendix_paleographic_descriptions.pdf`](appendix/Appendix_paleographic_descriptions.pdf).
 
-Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. They are archived together with this code as a single combined deposit on Zenodo: [10.5281/zenodo.23805278](https://doi.org/10.5281/zenodo.23805278) (all versions; this version, 1.0.0: [10.5281/zenodo.23805279](https://doi.org/10.5281/zenodo.23805279)).
+Large files (images, embeddings, model checkpoint, and the rendered `outputs/*.html`) are not tracked in this git repository due to size constraints. They are archived together with this code as a single combined deposit on Zenodo: [10.5281/zenodo.23805278](https://doi.org/10.5281/zenodo.23805278) (all versions; this version, 1.0.1: [10.5281/zenodo.23840544](https://doi.org/10.5281/zenodo.23840544)).
 
 To cite this work, see [`CITATION.cff`](CITATION.cff); Zenodo deposit metadata is in [`.zenodo.json`](.zenodo.json).
 
